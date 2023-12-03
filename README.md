@@ -1,5 +1,8 @@
 # 🍉 SuikaGameAR
 수박게임 AR 버전 _(증강현실및실습 팀 프로젝트)_
+> 원작 수박게임
+> 
+> <img src="https://github.com/namkyu-99/HorrorMaze/assets/128462226/27b3335c-9457-440b-af38-85e0a0c9d581" width="540">
 
 <br />
 
@@ -18,7 +21,7 @@
 
 <br />
 
-## 🔑 주요기능
+## 🔑 구현 내용
 
 ### 1. UI
 > - 튜토리얼 및 옵션 지원
