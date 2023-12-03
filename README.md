@@ -14,7 +14,7 @@
 ### 2. 인원 및 역할
 > |                    Name                    |  Position   |
 > | :----------------------------------------: | :---------: |
-> | [박남규](https://github.com/namkyu-99) | Project Leader, UI |
+> | **[박남규](https://github.com/namkyu-99)** | **Project Leader, UI** |
 > | [권오준](https://github.com/Ojun9898) | Game System |
 > | [이환진](https://github.com/mokoon) | Hand Tracking |
 > | [김태훈](https://github.com/asasds145) | Score, Leaderboard |
