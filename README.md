@@ -23,12 +23,12 @@
 ### 1. 박스 증강
 > - 평면을 인식하고 터치한 위치에 박스 오브젝트 생성
 >
-> <img src="https://github.com/namkyu-99/SuikaGameAR/assets/128462226/7bafc362-3458-4f10-a86c-4b94cd1729d1" width="300">
+> <img src="https://github.com/namkyu-99/SuikaGameAR/assets/128462226/7bafc362-3458-4f10-a86c-4b94cd1729d1" width="250">
 
 <br />
 
 ### 2. 핸드 트래킹
-> <img src="https://github.com/namkyu-99/SuikaGameAR/assets/128462226/744cef44-c540-4fe9-8c98-9f36286ede37" width="300">
+> <img src="https://github.com/namkyu-99/SuikaGameAR/assets/128462226/744cef44-c540-4fe9-8c98-9f36286ede37" width="250">
 
 ### 3. UI
 > <div>
