@@ -37,7 +37,7 @@ public class SpawnPoint : MonoBehaviour
 
         float depthEstimation = trackingInfo.depth_estimation;
 
-        Vector3 jointPosition = ManoUtils.Instance.CalculateNewPositionSkeletonJointDepth(new Vector3(trackingInfo.skeleton.joints[8].x, trackingInfo.skeleton.joints[8].y, trackingInfo.skeleton.joints[8].z), depthEstimation);
+        Vector3 jointPosition = ManoUtils.Instance.CalculateNewPositionSkeletonJointDepth(new Vector3(trackingInfo.skeleton.joints[4].x, trackingInfo.skeleton.joints[4].y, trackingInfo.skeleton.joints[4].z), depthEstimation);
 
         //float target_to_ground = jointPosition.y;
        

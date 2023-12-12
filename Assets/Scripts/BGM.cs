@@ -6,6 +6,6 @@ public class BGM : MonoBehaviour
 {
     void Start()
     {
-        DontDestroyOnLoad(this);
+        GetComponent<AudioSource>().volume = PlayerPrefs.GetFloat("BGM", 0.5f);
     }
 }

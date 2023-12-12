@@ -10,6 +10,6 @@ public class bgmCreator : MonoBehaviour
     {
         if(GameObject.FindGameObjectsWithTag("BGM").Length == 0)
             Instantiate(BGM);
-        Destroy(this.gameObject);
+        Destroy(transform.gameObject);
     }
 }

@@ -1,0 +1,49 @@
+{
+  "project_info": {
+    "project_number": "242902080852",
+    "firebase_url": "https://suikaar-2c888-default-rtdb.firebaseio.com",
+    "project_id": "suikaar-2c888",
+    "storage_bucket": "suikaar-2c888.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:242902080852:android:b69863290bdc0160f2bcc1",
+        "android_client_info": {
+          "package_name": "com.KUT.SuikaAR"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCBCtzXkQeSAbW5wC7JkKw25tUndRUx16s"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:242902080852:android:36c67b765a79b540f2bcc1",
+        "android_client_info": {
+          "package_name": "com.username.hellomano"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCBCtzXkQeSAbW5wC7JkKw25tUndRUx16s"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

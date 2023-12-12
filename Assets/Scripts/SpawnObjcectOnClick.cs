@@ -7,6 +7,7 @@ public class SpawnObjectOnClick : MonoBehaviour
     [SerializeField] private GameObject[] arObject;
     public GameObject GameSystem_Object;
     private GameSystem gameSystem;
+    public AudioSource Drop;
 
     void Start()
     {
@@ -36,7 +37,7 @@ public class SpawnObjectOnClick : MonoBehaviour
         TrackingInfo trackingInfo = ManomotionManager.Instance.Hand_infos[0].hand_info.tracking_info;
         float depthEstimation = trackingInfo.depth_estimation;
         Vector3 jointPosition = ManoUtils.Instance.CalculateNewPositionSkeletonJointDepth(
-            new Vector3(trackingInfo.skeleton.joints[8].x, trackingInfo.skeleton.joints[8].y, trackingInfo.skeleton.joints[8].z),
+            new Vector3(trackingInfo.skeleton.joints[4].x, trackingInfo.skeleton.joints[4].y, trackingInfo.skeleton.joints[4].z),
             depthEstimation
         );
 
@@ -46,12 +47,20 @@ public class SpawnObjectOnClick : MonoBehaviour
         // 다음 값 설정
         gameSystem.SetNextIndex();
 
+        // 다음다음 값 설정
+        gameSystem.SetNextNextIndex();
+
         // 현재 값에 해당하는 오브젝트 생성
         Instantiate(arObject[currentIndex], jointPosition, Quaternion.identity);
 
-        Handheld.Vibrate();
-
         // nextIndex 값을 currentIndex로 옮김
         gameSystem.SetNextAsCurrent();
+
+        // 진동
+        if(System.Convert.ToBoolean(PlayerPrefs.GetInt("Vibration", 1)))
+            Handheld.Vibrate();
+
+        // 효과음 재생
+        Drop.Play();
     }
 }

@@ -16,6 +16,7 @@ public class Score : MonoBehaviour
         // 게임 시작 시 최고점수 불러오기
         highScore = PlayerPrefs.GetInt("HighScore", 0);
         highScoreText.text = highScore.ToString();
+        ResetCurrentScore();
     }
 
     void Update()
@@ -81,13 +82,13 @@ public class Score : MonoBehaviour
 
     }
 
-    void OnApplicationQuit()
-    {
-        // 게임 종료 시 최고점수 저장
-        PlayerPrefs.SetInt("HighScore", highScore);
-    }
+    // void OnApplicationQuit()
+    // {
+    //     // 게임 종료 시 최고점수 저장
+    //     PlayerPrefs.SetInt("HighScore", highScore);
+    // }
 
-    void ResetHighScore()
+    public static void ResetHighScore()
     {
         highScore = 0;
     }
@@ -95,5 +96,10 @@ public class Score : MonoBehaviour
     public static void ResetCurrentScore()
     {
         currentScore = 0;
+    }
+
+    public static int GetCurrentScore()
+    {
+        return currentScore;
     }
 }

@@ -18,11 +18,13 @@ TagManager:
   - Plane
   - baseSDK
   - BGM
+  - grape
+  - lemon
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - RayHit
   - Water
   - UI
   - 

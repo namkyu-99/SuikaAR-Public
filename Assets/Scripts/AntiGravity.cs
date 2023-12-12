@@ -18,4 +18,3 @@ public class AntiGravity : MonoBehaviour
         }
     }
 }
-

@@ -31,6 +31,11 @@ public class Fruit : MonoBehaviour
         // 지연 시간을 기다립니다.
         yield return new WaitForSeconds(changeDelay);
 
+        // 효과음 재생
+        AudioSource Pop = GameObject.Find("Pop").GetComponent<AudioSource>();
+        Pop.volume = PlayerPrefs.GetFloat("SE", 0.5f);
+        Pop.Play();
+
         // 생성 위치는 두 과일의 중간 지점
         Vector3 spawnPosition = (transform.position + other.transform.position) / 2;
 
@@ -38,7 +43,6 @@ public class Fruit : MonoBehaviour
         Instantiate(nextStageFruitPrefab, spawnPosition, Quaternion.identity);
         Instantiate(EffectPrefab, spawnPosition, Quaternion.identity);
         Score.UpdateScore(nextStageFruitPrefab.tag);
-
 
         // 현재 과일과 충돌한 과일을 파괴
         Destroy(other);
